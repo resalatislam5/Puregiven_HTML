@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puregiven</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <!-- desy-ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Flowbite-->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <!-- tailwind-css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,6 +17,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                topHeaderGreen: '#82b29a',
+                White: '#faf7e3'
               }
             }
           }
@@ -25,13 +28,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <!-- top-navber -->
+    <nav class="navbar bg-base-100 bg-topHeaderGreen text-White">
+        <div class="grid grid-cols-2 gap-4 justify-between w-full text-sm">
+            <!-- left-navber -->
+            <div>
+                <a href="#" class="pl-6 text-sm"><span><i class="fa-solid fa-phone-flip pr-2"></i></span> Call us 000 8888 999</a>
+                <a href="#" class="pl-6 text-sm"><span><i class="fa-solid fa-envelope pr-2"></i></span> contact@sitename.com</a>
+                <a href="#" class="pl-6 text-sm">Become A Volunteer</a>
+            </div>
+            <!-- Righr-navber-->
+            <div class="flex justify-end items-center">
+                <div class="">
+                    <a class="pl-6" href="#"><span><i class="fa-solid fa-arrow-right-to-bracket pr-2"></i></span> Login</a>
+                    <a href="#" class="border-2 border-gray-300 ml-6 text-sm px-5 py-3 rounded-sm"><span><i class="fa-regular fa-user pr-2"></i></span> Sign Up</a>
+                </div>
+                <div class="mr-5">
+                    <a href="#" class="pl-6">Twitter</a>
+                    <a href="#" class="pl-6">Facebook</a>
+                    <a href="#" class="pl-6">Youtube</a>
+                </div>
+            </div>
+            <!-- Righr-navber-end-->           
+        </div>
+      </nav>
+    <!-- top-navber-end -->
+    <!-- main-navber -->
+
+    <!-- main-navber-end -->
+    </header>
 
 
 
-    
+
 
     <!-- tailwind-config -->
     <script src="js/tailwind.config.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/aa62e6a0fe.js" crossorigin="anonymous"></script>
 </body>
 </html>
